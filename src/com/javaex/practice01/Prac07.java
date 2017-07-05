@@ -15,21 +15,21 @@ public class Prac07 {
 			System.out.print(">>");
 			num=sc.nextInt();
 			
-			if(num<ans) {
+			if(num<ans) {							//답보다 높을때
 				System.out.println("더 높게");
-			} else if(num>ans) {
+			} else if(num>ans) {					//답보다 낮을때
 				System.out.println("더 낮게");
-			} else {
+			} else {								//정답일때
 				System.out.println("맞았습니다.");
 				System.out.print("게임을 종료하시겠습니까?(y/n) >>");
 				
 				String flag = sc.next();
 				
-				if(flag.equals("y")) {
+				if(flag.equals("y")) {				//종료할 경우 while문 탈출
 					break;
 				}
 				
-				ans = (int)(Math.random()*100)+1;
+				ans = (int)(Math.random()*100)+1;		//if문을 안거치면 다시 랜던값을 받는다
 			}
 		}
 		

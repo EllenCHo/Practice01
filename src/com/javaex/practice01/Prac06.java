@@ -14,14 +14,14 @@ public class Prac06 {
 
 		switch (flag) {
 		case 0:
-			for (int j = 0; j <= i/2; j++) {
-				result += j*2;
+			for (int j = 2; j <= i; j+=2) {
+				result += j;
 			}
 			break;
 
 		case 1:
-			for (int j = 0; j <= i/2; j++) {
-				result += j*2 + 1;
+			for (int j = 1; j <= i; j+=2) {
+				result += j;
 			}
 			break;
 		}

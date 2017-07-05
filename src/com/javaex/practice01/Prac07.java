@@ -28,6 +28,8 @@ public class Prac07 {
 				if(flag.equals("y")) {
 					break;
 				}
+				
+				ans = (int)(Math.random()*100)+1;
 			}
 		}
 		

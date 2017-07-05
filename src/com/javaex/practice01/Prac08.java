@@ -18,25 +18,25 @@ public class Prac08 {
 			int choice = sc.nextInt();
 			
 			switch(choice) {
-				case 1: 
+				case 1: 					//예금을 선택했을 겨우
 					System.out.print("예금액>");
 					money = sc.nextInt();
 					account += money;
 					break;
-				case 2:
+				case 2:						//출금을 선택했을 경우
 					System.out.print("출금액>");
 					money = sc.nextInt();
-					if(money<=account) {
+					if(money<=account) {				//잔고보다 출금이 적을 경우 인출
 						account -= money;
-					} else {
+					} else {							//잔고보다 출금이 많을 경우 
 						System.out.println("잔고가 부족합니다.");
 						System.out.println("잔고액 : "+account);
 					}
 					break;
-				case 3:
+				case 3:						//잔고 확인
 					System.out.println("잔고액>"+account);
 					break;
-				case 4:
+				case 4:						//종료
 					flag = false;
 					System.out.println("프로그램 종료");
 					break;
